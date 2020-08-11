@@ -1,0 +1,60 @@
+{% include "layout.njk" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/partials/page-study.css">
+{% endblock styles %}
+
+{% block body %}
+    <body id="page-study">
+        <div id="container">
+
+           <header class="page-header">
+               <div class="top-bar-container">
+                   <a href="/">
+                        <img src="/assets/icons/back.svg" alt="Voltar">
+                   </a>
+                   <img src="/assets/logo.svg" alt="Proffy">
+               </div>
+               <div class="header-content">
+                   <strong>Esses são os proffys disponíveis</strong>
+                   <form id="search-teachers">
+                       <div class="select-block">
+                           <label for="subject">Matéria</label>
+                           <select name="subject" id="subject">
+                               <option value="" disabled="">Selecione uma opção</option>
+                               <option value="1">Artes</option>
+                               <option value="2">Ciências</option>
+                               <option value="3">Educação</option>
+                               <option value="4">Geografia</option>
+                           </select>
+                       </div>
+                       
+                        <div class="select-block">
+                            <label for="weekday">Dia da Semana</label>
+                            <select name="weekday" id="weekday">
+                                <option value="" disabled="">Selecione uma opção</option>
+                               <option value="1">Domingo</option>
+                               <option value="2">Segunda-feira</option>
+                               <option value="3">Terça-feira</option>
+                               <option value="4">Quarta-feira</option>
+                            </select>
+                        </div>
+
+                        <div class="input-block">
+                            <label for="time">Hora</label>
+                            <input name="time" id="time" type="time">
+                        </div>
+                        <button type="submit">Filtrar</button>
+                   </form>
+               </div>
+           </header>
+
+           <main>
+               <article>
+                   
+               </article>
+           </main>
+
+        </div>
+    </body>
+{% endblock body %}
