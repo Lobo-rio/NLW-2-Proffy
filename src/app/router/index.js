@@ -9,4 +9,8 @@ Router.get('/study', function(req, res){
     return res.render("study")
 })
 
+Router.get('/give-classes', function(req, res){
+    return res.render("give-classes")
+})
+
 module.exports = Router
