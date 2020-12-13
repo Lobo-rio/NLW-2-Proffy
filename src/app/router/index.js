@@ -13,4 +13,8 @@ Router.get('/give-classes', function(req, res){
     return res.render("give-classes")
 })
 
+Router.get('/date-new', function(req, res){
+    return res.render("date-new")
+})
+
 module.exports = Router
